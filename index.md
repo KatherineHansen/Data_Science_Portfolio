@@ -3,7 +3,7 @@ Simple Linear Regression
 [Cancer mortalities and Poverty Rates](https://https://github.com/KatherineHansen/Data_Science_Portfolio/gh-pages/CancerPoverty.pdf)
 
 Muliple Linear Regression
-[North Carolina Birthrates](Birthrates.md)
+[North Carolina Birthrates](https://github.com/KatherineHansen/Data_Science_Portfolio/gh-pages/BirthWeight.pdf)
 
 
 
