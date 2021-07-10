@@ -48,6 +48,10 @@
       margin-top:10px;
       font-size: 20pt;
     }
+    iframe {
+      width: 100%;
+      height: 200px;
+    }
     </style>
 </head>
 
@@ -62,13 +66,13 @@
   </div>
   <div class="main">
   <h2>Statistical Analysis</h2>
-  <p><strong>Simple Linear Regression</strong> <br><br> <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/blob/gh-pages/CancerPoverty.pdf" target="_blank" type="application/pdf">Cancer mortalities and Poverty Rates</a>  -via JMP, R
+  <p><strong>Simple Linear Regression</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/CancerPoverty.pdf" target="_blank">Cancer mortalities and Poverty Rates</a>  -via JMP, R
     <br><em>&emsp;An examination of a connection between poverty rates across America and correlated cancer mortality rates. 
                   I discuss the valitidy of the simple linear regression results, as well as look into any outlier cases, 
                   coming to the conclusion that poverty rates accounted for about 18% of the variability in cancer mortalities 
                   across the United States, based on the sample used.</em>
   </p>
-  <p><strong>Multiple Linear Regression</strong> <br><br> <a href="file:///C:/Users/ki6241pu/Desktop/Portfolio/Stats/BirthWeight.pdf" target="_blank">North Carolina Birth Weights</a>  -via JMP, R
+  <p><strong>Multiple Linear Regression</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/BirthWeight.pdf" target="_blank">North Carolina Birth Weights</a>  -via JMP, R
     <br><em>&emsp;A regression using multiple variables to predict birth weights of North Carolinian babies, including the mother's 
                   minority status, whether she smokes, how many children previously birth, etc. In combination, these variables 
                   explained about 46% of differeneces seen in the baby's birth weights. </em>
@@ -88,7 +92,16 @@
                   most data management was carried out using python. In tableau, I created graphs for each indicator (such as life expectancy, tobacco use, etc.) with the 
                   countries Covid-19 case rates, as well as an interactive version with which the dates of interest can be manipulated.</em>
   </p>
-
+  <h2>Data Managment</h2>
+  <p>
+    <strong>World Bank Indicators and Covid</strong> <br><br>  -via Python, Excel
+    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/covid_indicators_work.ipynb" title="Jupyter nbviewer"></iframe>
+    <br><em>&emsp;Using three datasets, Covid-19 cases, country populations, and World Bank indicators, I cleaned and organized them in order to 
+                  combine them into a single dataset. Then mutated some columns to get Covid-19 rates by country and general formatting work. Since
+                  the indicators had data for multiple years, I wanted to filter it down to only the single year of data I wanted for each, then saved
+                  it out as a csv file to use later in Tableau to visualize.
+    </em>
+  </p>
   </div>
   </div>
 </body>
