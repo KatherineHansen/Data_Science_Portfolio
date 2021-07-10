@@ -1,6 +1,6 @@
 ## Statistic Papers
 Simple Linear Regression
-[Cancer mortalities and Poverty Rates](https://github.com/KatherineHansen/Data_Science_Portfolio/CancerPoverty.pdf)
+[Cancer mortalities and Poverty Rates](https://KatherineHansen.github.io/CancerPoverty.pdf)
 
 Muliple Linear Regression
 [North Carolina Birthrates](Birthrates.md)
