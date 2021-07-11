@@ -1,0 +1,29 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getProductsPerCodes`(IN productCodes VARCHAR(100))
+BEGIN
+	DECLARE Occurrences INT Default 0 ;
+	DECLARE Str VARCHAR(255);
+    DECLARE myValue VARCHAR(255);
+	CREATE temporary TABLE IF NOT EXISTS temp_table (P1 text NULL);
+	SET Str = productCodes;
+        SET Occurrences = LENGTH(Str) - LENGTH(REPLACE(Str, ',', ''));
+        myloop: WHILE (Occurrences > 0)
+        DO 
+            SET myValue = SUBSTRING_INDEX(Str, ',', 1);
+            IF (myValue != '') THEN
+				insert into temp_table (P1) values (myValue);
+				ELSE 
+					LEAVE myloop; 
+			END IF;
+		SET Occurrences = LENGTH(Str) - LENGTH(REPLACE(Str, ',', ''));
+		IF (Occurrences = 0) THEN 
+			LEAVE myloop; 
+		END IF;
+		SET Str = SUBSTRING(Str,LENGTH(SUBSTRING_INDEX(Str, ',', 1))+2);
+        END WHILE; 
+
+    
+    SELECT productCode, productName, productLine, productVendor, quantityInStock
+    FROM products AS P 
+    JOIN temp_table AS TT ON P.productCode = TT.P1
+    WHERE P.productCode = TT.P1;
+END

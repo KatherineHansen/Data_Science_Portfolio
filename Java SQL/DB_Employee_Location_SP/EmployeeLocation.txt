@@ -1,0 +1,7 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `EmployeeLocation`(IN employeeID INTEGER)
+BEGIN
+	SELECT E.firstName, E.lastName, O.city, O.state, O.country, O.territory, E.employeeNumber
+    FROM classicmodels.employees AS E
+    JOIN classicmodels.offices AS O ON E.officeCode = O.officeCode
+    WHERE E.employeeNumber = employeeID;
+END
