@@ -3,6 +3,21 @@
 <head>
     <meta charset="utf-8">
 
+    <script>
+      window.onload=function(){ with (new XMLHttpRequest()) {
+        onreadystatechange=cb; open('GET','https://katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades_clean (CSV).csv',true); responseType='text';send();
+      }}
+      function cb(){if(this.readyState===4)document.getElementById('main')
+                                                   .innerHTML=tbl(this.responseText); }
+      function tbl(csv){ // do whatever is necessary to create your table here ...
+       return csv.split('\n')
+                 .map(function(tr,i){return '<tr><td>'
+                                           +tr.replace(/,/g,'</td><td>')
+                                           +'</td></tr>';})
+                 .join('\n'); }
+      </script>
+      
+
     <style>
     .wrapper {
       display: flex;
@@ -52,6 +67,20 @@
       width: 100%;
       height: 200px;
     }
+    table {
+      border-collapse: collapse;
+      border: 2px black solid;
+      height: 200px;
+      display: block;
+      overflow: scroll;
+      table-layout: fixed;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    td {
+      border: 1px black solid;
+      padding: 5px;
+    }
     </style>
 </head>
 
@@ -94,15 +123,54 @@
   </p>
   <h2>Data Managment</h2>
   <p>
-    <strong>World Bank Indicators and Covid</strong> <br><br>  -via Python, Excel
-    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/covid_indicators_work.ipynb" title="Jupyter nbviewer"></iframe>
+    <strong>World Bank Indicators and Covid</strong> <br>  -via Python;Pandas, Excel <br>
     <br><em>&emsp;Using three datasets, Covid-19 cases, country populations, and World Bank indicators, I cleaned and organized them in order to 
                   combine them into a single dataset. Then mutated some columns to get Covid-19 rates by country and general formatting work. Since
                   the indicators had data for multiple years, I wanted to filter it down to only the single year of data I wanted for each, then saved
                   it out as a csv file to use later in Tableau to visualize.
     </em>
+    <br><br>Python code
+    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/covid_indicators_work.ipynb" title="Jupyter nbviewer"></iframe>
+  </p>
+  <p>
+    <strong>Sell Short Trades File Clean-up</strong> <br>  -via Python;regex <br><br> Original messy text file
+    <iframe src="https://katherinehansen.github.io/Data_Science_Portfolio/Sell Short Trades.txt" title="Text file"></iframe>
+    <br><em>&emsp;This task was to take this original messy text file and clean it using python.
+                  First, unwanted lines such as blank lines, page number lines, and repeated headers are removed
+                  by matching regex patterns. Next, as data for a single trade was spread across 2-4 lines (as opposed
+                  to only a single line), I grouped them together into singles lines per trade. Then the next step is 
+                  to split up the data into columns, done via regex, and fix some data errors and finally reorder
+                  the columns to match the header. 
+    </em>
+    <br><br>Python code
+    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part2_Sell_Short_Trades.ipynb" title="Jupyter nbviewer"></iframe>
+    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades.ipynb" title="Jupyter nbviewer"></iframe>
+    <br><br> Resulting csv file
+    <!--
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+        <script type="text/javascript"charset="utf-8">
+            d3.text("https://katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades_clean (CSV).csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+
+                var container = d3.select("body")
+                    .append("table")
+
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            });
+        </script> -->
+        <table id="main"></table>
   </p>
   </div>
+  
   </div>
+
 </body>
 </html>
