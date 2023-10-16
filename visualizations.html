@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="wrapper">
+
+    <div id="sidebar">
+        <h1>Katherine&nbspHansen</h1>
+        Data Scientist
+        <br>
+        <br>KateHansen10@yahoo.com
+        <br>(651) 353-9982
+        <br><a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank">LinkedIn</a>
+        <br><a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank">RESUME</a>
+        <br>
+    </div>
+    
+    <div id="main">
+        <div id="linkbar">
+        <p>
+          <a href="index.html">Overview</a> |
+          <a href="visualizations.html">Dashboards/Viz</a> |
+          <a href="statistical_analysis.html">Statistical Analysis</a> | 
+          <a href="automation.html">Automation</a> | 
+          <a href="technical.html">Technical</a> 
+        </p>
+    </div>
+  
+  <h2>Dashboards</h2>
+  <p>
+    <strong>Sales</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Sales_Dashboard_Dummy_Data.pbix" target="_blank">Sales Power BI .pbix file</a> - via Power BI, SQL Server
+    <br><em>&emsp;A Power BI dashboard for all levels of the sales team to track thousands of daily transactions, 
+                  monitor trends, analyze movement patterns, and assess customer behavior.
+                  <br><br>
+                  I utilized the company's newly implemented SQL Server to query data from their ERP, integrated external sources, and 
+                  brought in budgeted goals to centralizing data and bring uniformity across company. I interacted with varying levels of 
+                  sales team members to address their specific requirements and preferences. 
+                  </em>
+  </p>
+  
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Summary.PNG">
+      <div class="text">Summary</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_DC.PNG">
+      <div class="text">DC</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityOverview.PNG">
+      <div class="text">Commodity Overview</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityDetail.PNG">
+      <div class="text">Commodity Detail</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerOverview.PNG">
+      <div class="text">Customer Overview</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail.PNG">
+      <div class="text">Customer Detail</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail2.PNG">
+      <div class="text">Customer Detail 2</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_SaleWeights.PNG">
+      <div class="text">Sale Weights</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Movement.PNG">
+      <div class="text">Movement</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+      <span class="dot" onclick="currentSlide(7)"></span> 
+      <span class="dot" onclick="currentSlide(8)"></span> 
+      <span class="dot" onclick="currentSlide(9)"></span> 
+    </div>
+    <script> // For slideshow effects
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+    
+
+    <p>
+        <strong>Fuel</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Sales_Dashboard_Dummy_Data.pbix" target="_blank">Fuel Power BI .pbix file</a> - via Power BI, MS Access, Python (selenium)
+        <br><em>&emsp;A PowerBI dashboard tracking diesel purchases across distribution centers enabling recommendations 
+                      for fuel contracts using historical data and cost-efficiency analysis.
+                      <br><br>
+                      I managed a MS Access database by consolidating daily invoices from various sources, integrating 
+                      <a href="https://www.eia.gov/" target="_blank">Environmental Impact Assessment (EIA)</a> website data, 
+                      and contracting information. I also also connected to the <a href="https://gasprices.aaa.com/"" target="_blank">AAA</a> 
+                      website through Power BI for state data and web scrapped with Python (selenium) to tie in 
+                      local fuel prices reported by <a href="https://www.gasbuddy.com/" target="_blank">GasBuddy</a>.
+                    </em>
+      </p>
+      
+        <div class="slideshow-container_fuel">
+        
+        <div class="mySlides_fuel fade_fuel">
+          <div class="numbertext_fuel"></div>
+          <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_National.png">
+          <div class="text_fuel">National</div>
+        </div>
+        <div class="mySlides_fuel fade_fuel">
+          <div class="numbertext_fuel"></div>
+          <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DC.png">
+          <div class="text_fuel">DC</div>
+        </div>
+        <div class="mySlides_fuel fade_fuel">
+          <div class="numbertext_fuel"></div>
+          <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_Contracts.png">
+          <div class="text_fuel">Contract Fulfillment</div>
+        </div>
+        <div class="mySlides_fuel fade_fuel">
+          <div class="numbertext_fuel"></div>
+          <img class="slideimgvertical"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_LocationContracts.png">
+          <div class="text_fuel">Contract Dailies</div>
+        </div>
+        <div class="mySlides_fuel fade_fuel">
+          <div class="numbertext_fuel"></div>
+          <img class="slideimgvertical"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DieselPriceFactors.png">
+          <div class="text_fuel">Diesel Price Factors</div>
+        </div>
+    
+        <a class="prev_fuel" onclick="plusSlides_fuel(-1)">❮</a>
+        <a class="next_fuel" onclick="plusSlides_fuel(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot_fuel" onclick="currentSlide_fuel(1)"></span> 
+          <span class="dot_fuel" onclick="currentSlide_fuel(2)"></span> 
+          <span class="dot_fuel" onclick="currentSlide_fuel(3)"></span> 
+          <span class="dot_fuel" onclick="currentSlide_fuel(4)"></span> 
+          <span class="dot_fuel" onclick="currentSlide_fuel(5)"></span> 
+        </div>
+        <script> // For slideshow effects
+            let slideIndex_fuel = 1;
+            showSlides_fuel(slideIndex_fuel);
+            function plusSlides_fuel(n) {
+              showSlides_fuel(slideIndex_fuel += n);
+            }
+            function currentSlide_fuel(n) {
+              showSlides_fuel(slideIndex_fuel = n);
+            }
+            function showSlides_fuel(n) {
+              let i_fuel;
+              let slides = document.getElementsByClassName("mySlides_fuel");
+              let dots = document.getElementsByClassName("dot_fuel");
+              if (n > slides.length) {slideIndex_fuel = 1}    
+              if (n < 1) {slideIndex_fuel = slides.length}
+              for (i_fuel = 0; i_fuel < slides.length; i_fuel++) {
+                slides[i_fuel].style.display = "none";  
+              }
+              for (i_fuel = 0; i_fuel < dots.length; i_fuel++) {
+                dots[i_fuel].className = dots[i_fuel].className.replace(" active", "");
+              }
+              slides[slideIndex_fuel-1].style.display = "block";  
+              dots[slideIndex_fuel-1].className += " active";
+            }
+        </script>
+
+
+  <h2 id="Vizualizations">Vizualizations</h2>
+  <p>
+
+    <strong>Minnesota Early/Absentee Voting</strong> <br><br> <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/Real_16067745859750/Story1" target="_blank">Hosted on Tableau Public</a> - via Tableau, Excel
+    <br><em>&emsp;A look into the increased popularity of early and absentee voting for presidential elections in Minnesota, 
+                  especially as it pertained to the 2020 election. Marked by the COVID-19 pandemic, in-person voting was 
+                  advised against and the option of voting absentee was greatly encouraged. These visualizations include
+                  a look over the past 2 decades of elections, a breakdown by county for the 2016 and 2020 elections, and
+                  an infographic showing some demographics of early voting.</em>
+  </p>
+  <p>
+    <strong>World Bank Indicators and Covid</strong> <br><br> <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/WorldBankIndicatorsandCovid/WorldBankIndicatorsandCOVID" target="_blank">Hosted on Tableau Public</a> - via Tableau, Python, Excel
+    <br><em>&emsp;I set out to discover potential relationships between World Bank Development Indicators and COVID-19 cases by country. I pulled data from multiple sources,
+                  with most data management carried out using Python. In Tableau, I created graphs for each indicator (such as life expectancy, tobacco use, etc.) with the 
+                  countries COVID-19 case rates, as well as an interactive version with which the dates of interest can be manipulated and more.</em>
+  </p>
+  <br>
+  </div> <!-- div main -->
+  
+  </div> <!-- div wrapper -->
+
+</body>
+</html>

@@ -2,192 +2,61 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-
-    <script>
-      window.onload=function(){ with (new XMLHttpRequest()) {
-        onreadystatechange=cb; open('GET','https://katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades_clean (CSV).csv',true); responseType='text';send();
-      }}
-      function cb(){if(this.readyState===4)document.getElementById('main')
-                                                   .innerHTML=tbl(this.responseText); }
-      function tbl(csv){ // do whatever is necessary to create your table here ...
-       return csv.split('\n')
-                 .map(function(tr,i){return '<tr><td>'
-                                           +tr.replace(/,/g,'</td><td>')
-                                           +'</td></tr>';})
-                 .join('\n'); }
-      </script>
-      
-
-    <style>
-    .wrapper {
-      display: flex;
-      justify-content: flex-start;
-    }
-    .sidebar {
-      position: sticky;
-      top: 25px;
-      margin-left: 0px;
-      padding: 15px;
-      padding-top: 10px;
-      padding-left: 8%;
-      padding-right: 25px;
-      height: fit-content;
-      background-color: black;
-      color: rgb(251,250,246);
-    }
-    .main {
-      margin: 0;
-      height: 100%;
-      padding-left: 25px;
-      padding-right: 10%;
-      word-wrap: break-word;
-      min-width: 20%;
-    }
-    body,html {
-      width: 100%;
-      height: 100%;
-      padding: 0px;
-      margin: 0px;
-    }
-    h1,h2,p {
-      font-family: Georgia, serif;
-    }
-    h2 {
-      text-decoration-line: underline;
-    }
-    a {
-      text-decoration: none;
-      color: rgb(147, 14, 165);
-    }
-    .name {
-      margin-top:10px;
-      font-size: 20pt;
-    }
-    iframe {
-      width: 100%;
-      height: 200px;
-    }
-    table {
-      border-collapse: collapse;
-      border: 2px black solid;
-      height: 200px;
-      display: block;
-      overflow: scroll;
-      table-layout: fixed;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    td {
-      border: 1px black solid;
-      padding: 5px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgb(251,250,246);">
-  <div class ="wrapper">
-  <div class="sidebar">
-    <div class="name">Katherine&nbspHansen</div>
+
+<body>
+  <div id="wrapper">
+
+  <div id="sidebar">
+    <h1>Katherine&nbspHansen</h1>
     Data Scientist
     <br>
     <br>KateHansen10@yahoo.com
     <br>(651) 353-9982
+    <br><a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank">LinkedIn</a>
+    <br><a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank">RESUME</a>
+    <br>
   </div>
-  
-  <div class="main">
-    <p>Jump to:
-      <a href="#Statistical Analysis" style="color: rgb(158, 118, 236);">Statistical Analysis</a> |
-      <a href="#Vizualizations" style="color: rgb(158, 118, 236);">Vizualizations</a> |
-      <a href="#Data Managment" style="color: rgb(158, 118, 236);">Data Management</a> |
-      <a href="#Database Work" style="color: rgb(158, 118, 236);">Database Work</a> |
-      <a href="#Automation" style="color: rgb(158, 118, 236);">Automation</a>
+
+  <div id="main">
+    <div id="linkbar">
+    <p>
+      <a href="index.html">Overview</a> |
+      <a href="visualizations.html">Dashboards/Viz</a> |
+      <a href="statistical_analysis.html">Statistical Analysis</a> | 
+      <a href="automation.html">Automation</a> | 
+      <a href="technical.html">Technical</a> 
     </p>
-  <h2 id="Statistical Analysis">Statistical Analysis</h2>
-  <p><strong>Simple Linear Regression</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/CancerPoverty.pdf" target="_blank">Cancer Mortalities and Poverty Rates</a>  - via JMP, R
-    <br><em>&emsp;An examination of a possible connection between poverty rates across America and correlated cancer mortality rates. 
-                  I discuss the validity of the simple linear regression results, as well as look into any outlier cases, 
-                  coming to the conclusion that poverty rates accounted for about 18% of the variability in cancer mortalities 
-                  across the United States, based on the sample used.</em>
-  </p>
-  <p><strong>Multiple Linear Regression</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/BirthWeight.pdf" target="_blank">North Carolina Birth Weights</a>  - via JMP, R
-    <br><em>&emsp;A regression using multiple variables to predict birth weights of North Carolinian babies, including the mother's 
-                  minority status, whether she smokes, how many children she had previously birthed, etc. In combination, these variables 
-                  explained about 46% of differences seen in the birth weights of babies. </em>
-  </p>
-  <h2 id="Vizualizations">Vizualizations</h2>
-  <p>
-    <strong>Minnesota Early/Absentee Voting</strong> <br><br> <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/Real_16067745859750/Story1" target="_blank">Hosted on Tableau Public</a> - via Tableau, Excel
-    <br><em>&emsp;A look into the increased popularity of early and absentee voting for presidential elections in Minnesota, 
-                  especially as it pertained to the 2020 election. Marked by the COVID-19 pandemic, in-person voting was 
-                  advised against and the option of voting absentee was greatly encouraged. These visualizations include
-                  a look over the past 2 decades of elections, a breakdown by county for the 2016 and 2020 elections, and
-                  an infographic showing some demographics of early voting.</em>
-  </p>
-  <p>
-    <strong>World Bank Indicators and Covid</strong> <br><br> <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/WorldBankIndicatorsandCovid/WorldBankIndicatorsandCOVID" target="_blank">Hosted on Tableau Public</a> - via Tableau, Python, Excel
-    <br><em>&emsp;I set out to discover potential relationships between World Bank Development Indicators and COVID-19 cases by country. I pulled data from multiple sources,
-                  with most data management carried out using Python. In Tableau, I created graphs for each indicator (such as life expectancy, tobacco use, etc.) with the 
-                  countries COVID-19 case rates, as well as an interactive version with which the dates of interest can be manipulated and more.</em>
-  </p>
-  <h2 id="Data Managment">Data Managment</h2>
-  <p>
-    <strong>World Bank Indicators and Covid</strong> <br>  - via Python (Pandas), Excel <br>
-    <br><em>&emsp;Beginning with three datasets: COVID-19 cases, country populations, and World Bank indicators, I cleaned and organized them in order to 
-                  combine them into a single dataset, then manipulated columns to get COVID-19 rates by country and general formatting work. Since
-                  the indicators had data for multiple years, I wanted to filter it down to only the single year of data I wanted for each, then saved
-                  it out as a csv file to use later in Tableau to visualize.
-    </em>
-    <br><br>Python code
-    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/covid_indicators_work.ipynb" title="Jupyter nbviewer"></iframe>
-  </p>
-  <p>
-    <strong>Sell Short Trades File Clean-up</strong> <br>  - via Python <br><br> Original messy text file
-    <iframe src="https://katherinehansen.github.io/Data_Science_Portfolio/Sell Short Trades.txt" title="Text file"></iframe>
-    <br><em>&emsp;This task was to take this original messy text file and clean it using Python.
-                  First, unwanted lines such as blank lines, page number lines, and repeated headers were removed
-                  by matching regex patterns. Next, as data for a single trade was spread across 2-4 lines (as opposed
-                  to only a single line), I grouped them together into single lines per trade. Then the next step was 
-                  to split up the data into columns, done via regex, and fix some data errors and finally, reorder
-                  the columns to match the header. 
-    </em>
-    <br><br>Python code
-    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part2_Sell_Short_Trades.ipynb" title="Jupyter nbviewer"></iframe>
-    <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades.ipynb" title="Jupyter nbviewer"></iframe>
-    <br><br> Resulting csv file
-    <table id="main"></table>
-  </p>
-  <h2 id="Database Work">Database Work</h2>
-  <p>
-    <strong>mySQL and Java JDBC</strong> <br><br> <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Java%20SQL" target="_blank">Projects on GitHub</a> - via SQL (mySQL), Java
-    <br><em>&emsp;A collection of SQL practices facilitated through Java JDBC, including basic SQL syntax like select, where, etc. as well
-                  as <u>stored procedures</u>, <u>prepared statements</u>, and <u>transactions</u>. Projects included table creation and updates/deletes, 
-                  pulling data from multiple tables, joins, and others.
-    </em>
-  </p>
-  <p>
-    <strong>Gym DataBase; Front Desk</strong> <br><br> <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Gym%20Project" target="_blank">Code on GitHub</a> - via PHP, HTML, SQL
-    <br><em>&emsp;A small scale database self created to experiment with web programming interaction through
-                  PHP and SQL. There is a login page (which uses frontDesk, frontDesk_pw to login for this example)
-                  that sends information to a page in the background to verify login details, which, if successful, then takes
-                  you to the main page for a pretend front desk employee. There, they can fill out forms to add new customers,
-                  schedule appointments with personal trainers, and delete appointments all while updating the tables in 
-                  the SQL database.
-    </em>
-  </p>
-  <h2 id="Automation">Automation</h2>
-  <p><strong>Word Report Automation</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/FCDStudentsAttitudesandBehaviorsSurveyReportAutomation.pdf" target="_blank">FCD Students Attitudes and Behaviors Survey Report Automation</a>  - via Microsoft VBA, Excel, Word
-    <br><em>&emsp;Abstract: Freedom from Chemical Dependency Prevention Works (FCD) administers the Students
-                  Attitudes and Behavior Survey (SABS) to measure student attitudes and behaviors regarding
-                  alcohol and other drugs as well as their perceptions of schoolmates’ attitudes and behaviors. The
-                  survey results are then communicated within a 100-page report. The goal of this project was to
-                  automate the report. Using Microsoft Visual Basic for Applications (VBA), ways to automate intext inputs, tables, and charts from Excel to Word were determined. While the whole report was
-                  not completed, the completed portion runs much faster than the previous method of manual
-                  input.</em>
-  </p>
+  </div>
+
+    <div id='gridtiles'>
+      <div class="divtiles" onclick="window.location='visualizations.html';">
+        <h2>Dashboards & Visualizations</h2>
+        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Viz_Tile.png">
+        <p class="tiledescription">Variety of dashboards and visualizations</p>
+      </div>
+      <div class="divtiles" onclick="window.location='statistical_analysis.html';">
+        <h2>Statistical Analysis</h2>
+        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Stats_Tile.jpg">
+        <p class="tiledescription">Simple and multiple linear regression analyses</p>
+      </div>
+      <div class="divtiles" onclick="window.location='automation.html';">
+        <h2>Automation</h2>
+        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Automation.png">
+        <p class="tiledescription">Report streamlining and efficiencies</p>
+      </div>
+      <div class="divtiles" onclick="window.location='technical.html';">
+        <h2>Technical</h2>
+        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Technical.png">
+        <p class="tiledescription">Misc. exercises of data handling</p>
+      </div>
+    </div>
   <br>
-  </div>
+  </div> <!-- div main -->
   
-  </div>
+  </div> <!-- div wrapper -->
 
 </body>
 </html>
