@@ -1,99 +1,146 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-
-    <script>
-      window.onload=function(){ with (new XMLHttpRequest()) {
-        onreadystatechange=cb; open('GET','https://katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades_clean (CSV).csv',true); responseType='text';send();
-      }}
-      function cb(){if(this.readyState===4)document.getElementById('tbmain')
-                                                   .innerHTML=tbl(this.responseText); }
-      function tbl(csv){ // do whatever is necessary to create your table here ...
-       return csv.split('\n')
-                 .map(function(tr,i){return '<tr><td>'
-                                           +tr.replace(/,/g,'</td><td>')
-                                           +'</td></tr>';})
-                 .join('\n'); }
-      </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical — Katherine Hansen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <div id="wrapper">
+  <div id="wrapper">
 
-    <div id="sidebar">
-        <h1>Katherine&nbspHansen</h1>
-        Data Scientist
-        <br>
-        <br>KateHansen10@yahoo.com
-        <br>(651) 353-9982
-        <br><a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank">LinkedIn</a>
-        <br><a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank">RESUME</a>
-        <br>
-    </div>
+    <header id="sidebar">
+      <div class="header-inner">
+        <div class="identity">
+          <h1>Katherine Hansen</h1>
+          <p class="role">Data Scientist</p>
+        </div>
+        <div class="contact">
+          <a href="mailto:KateHansen10@yahoo.com">KateHansen10@yahoo.com</a>
+          <a href="tel:+16513539982">(651) 353-9982</a>
+          <a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- <a href="https://github.com/katherinehansen" target="_blank" rel="noopener">GitHub</a> -->
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank" rel="noopener">Resume/CV (PDF)</a>
+        </div>
+      </div>
+    </header>
 
-  <div id="main">
-    <div id="linkbar">
-    <p>
-      <a href="index.html">Overview</a> |
-      <a href="visualizations.html">Dashboards/Viz</a> |
-      <a href="statistical_analysis.html">Statistical Analysis</a> | 
-      <a href="automation.html">Automation</a> | 
-      <a href="technical.html">Technical</a> 
-    </p>
-    </div>
+    <main id="main">
+      <nav id="linkbar">
+        <p>
+          <a href="index.html">Overview</a>
+          <a href="visualizations.html">Dashboards &amp; Viz</a>
+          <a href="statistical_analysis.html">Statistical Analysis</a>
+          <a href="automation.html">Automation</a>
+          <a href="technical.html" aria-current="page">Technical</a>
+        </p>
+      </nav>
 
-    <h2 id="Data Managment">Data Managment</h2>
-    <p>
-      <strong>World Bank Indicators and Covid</strong> - via Python (Pandas), Excel <br>
-      <em>&emsp;Beginning with three datasets: COVID-19 cases, country populations, and World Bank indicators, I cleaned and organized them in order to 
-                    combine them into a single dataset, then manipulated columns to get COVID-19 rates by country and general formatting work. Since
-                    the indicators had data for multiple years, I wanted to filter it down to only the single year of data I wanted for each, then saved
-                    it out as a csv file to use later in Tableau to visualize.
-      </em>
-      <br><br>Python code
-      <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/covid_indicators_work.ipynb" title="Jupyter nbviewer"></iframe>
-    </p>
-    <p>
-      <strong>Sell Short Trades File Clean-up</strong> - via Python <br><br> Original messy text file
-      <iframe src="https://katherinehansen.github.io/Data_Science_Portfolio/Sell Short Trades.txt" title="Text file"></iframe>
-      <br><em>&emsp;This task was to take this original messy text file and clean it using Python.
-                    First, unwanted lines such as blank lines, page number lines, and repeated headers were removed
-                    by matching regex patterns. Next, as data for a single trade was spread across 2-4 lines (as opposed
-                    to only a single line), I grouped them together into single lines per trade. Then the next step was 
-                    to split up the data into columns, done via regex, and fix some data errors and finally, reorder
-                    the columns to match the header. 
-      </em>
-      <br><br>Python code
-      <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part2_Sell_Short_Trades.ipynb" title="Jupyter nbviewer"></iframe>
-      <iframe src="https://nbviewer.jupyter.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades.ipynb" title="Jupyter nbviewer"></iframe>
-      <br><br> Resulting csv file
-      <table id="tbmain"></table>
-    </p>
-    <h2 id="Database Work">Database Work</h2>
-    <p>
-      <strong>mySQL and Java JDBC</strong> <br><br> <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Java%20SQL" target="_blank">Projects on GitHub</a> - via SQL (mySQL), Java
-      <br><em>&emsp;A collection of SQL practices facilitated through Java JDBC, including basic SQL syntax like select, where, etc. as well
-                    as <u>stored procedures</u>, <u>prepared statements</u>, and <u>transactions</u>. Projects included table creation and updates/deletes, 
-                    pulling data from multiple tables, joins, and others.
-      </em>
-    </p>
-    <p>
-      <strong>Gym DataBase; Front Desk</strong> <br><br> <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Gym%20Project" target="_blank">Code on GitHub</a> - via PHP, HTML, SQL
-      <br><em>&emsp;A small scale database self created to experiment with web programming interaction through
-                    PHP and SQL. There is a login page (which uses frontDesk, frontDesk_pw to login for this example)
-                    that sends information to a page in the background to verify login details, which, if successful, then takes
-                    you to the main page for a pretend front desk employee. There, they can fill out forms to add new customers,
-                    schedule appointments with personal trainers, and delete appointments all while updating the tables in 
-                    the SQL database.
-      </em>
-    </p>
- 
+      <h2>Data Management</h2>
+
+      <article class="project">
+        <h3>World Bank indicators &amp; COVID-19 (data cleaning)</h3>
+        <p class="project-meta">Python · Pandas · Excel · CSV output for Tableau</p>
+        <p>
+          Starting from three datasets — COVID-19 cases, country populations, and
+          World Bank indicators — I cleaned and organized them into a single
+          combined dataset, then manipulated columns to derive COVID-19 rates
+          per country and normalize formatting. Since the indicators spanned
+          multiple years, I filtered each down to the single year of interest
+          and exported a CSV ready for visualization in Tableau.
+        </p>
+        <iframe
+          src="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/covid_indicators_work.ipynb"
+          title="World Bank indicators and COVID — Jupyter notebook on nbviewer"></iframe>
+      </article>
+
+      <article class="project">
+        <h3>Sell Short trades file cleanup</h3>
+        <p class="project-meta">Python · Regular expressions · Text parsing</p>
+        <p>
+          Took a raw, messy text report and cleaned it into a structured CSV
+          using Python. Steps included: removing unwanted lines (blanks, page
+          numbers, repeated headers) by matching regex patterns; grouping
+          records that spanned 2–4 lines into single rows; splitting fields
+          into columns via regex; correcting data errors; and reordering
+          columns to match the header.
+        </p>
+
+        <p><strong>Source file:</strong></p>
+        <iframe
+          src="https://katherinehansen.github.io/Data_Science_Portfolio/Sell%20Short%20Trades.txt"
+          title="Original messy text file"></iframe>
+
+        <p><strong>Notebooks:</strong></p>
+        <iframe
+          src="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part2_Sell_Short_Trades.ipynb"
+          title="Sell Short trades — cleaning notebook (part 2)"></iframe>
+        <iframe
+          src="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades.ipynb"
+          title="Sell Short trades — cleaning notebook (part 3)"></iframe>
+
+        <p><strong>Resulting CSV:</strong></p>
+        <div class="table-scroll">
+          <table id="tbmain">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+
+      <h2>Database Work</h2>
+
+      <article class="project">
+        <h3>
+          <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Java%20SQL" target="_blank" rel="noopener">SQL practice via Java JDBC</a>
+        </h3>
+        <p class="project-meta">Java · MySQL · JDBC</p>
+        <p>
+          A collection of SQL exercises driven through Java JDBC — basic
+          syntax (SELECT, WHERE, etc.) as well as stored procedures, prepared
+          statements, and transactions. Projects covered table creation,
+          updates and deletes, multi-table queries, and joins.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Gym%20Project" target="_blank" rel="noopener">Gym database — front desk app</a>
+        </h3>
+        <p class="project-meta">PHP · HTML · MySQL</p>
+        <p>
+          A small database built to experiment with web-to-database interaction
+          through PHP and SQL. A login page posts credentials to a background
+          verification script; on success, the user lands on a mock front-desk
+          portal where they can add customers, schedule personal-training
+          appointments, and delete appointments — all updating the underlying
+          SQL tables.
+        </p>
+      </article>
+
+    </main>
   </div>
-  
-  </div>
 
+  <script>
+    /* Fetch the cleaned CSV and render it as a table.
+       Kept separate from the main page so the table area
+       can be styled independently (.table-scroll). */
+    fetch('https://katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades_clean.csv')
+      .then(response => response.ok ? response.text() : Promise.reject(response.status))
+      .then(csv => {
+        const rows = csv.trim().split('\n').map(row => row.split(','));
+        const table = document.getElementById('tbmain');
+        const [header, ...body] = rows;
+        table.querySelector('thead').innerHTML =
+          '<tr>' + header.map(h => `<th>${h}</th>`).join('') + '</tr>';
+        table.querySelector('tbody').innerHTML =
+          body.map(r => '<tr>' + r.map(c => `<td>${c}</td>`).join('') + '</tr>').join('');
+      })
+      .catch(err => {
+        const table = document.getElementById('tbmain');
+        table.innerHTML = `<caption>Could not load CSV (${err}).</caption>`;
+      });
+  </script>
 </body>
 </html>
