@@ -280,16 +280,22 @@ td {
 }
 
 /* ---------- Slideshow ---------- */
-.slideimg {
-  height: 575px;
-  width: 100%;
-}
+.slideimg,
 .slideimgvertical {
-  height: 575px;
-  width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 70vh;        /* caps tall portrait images */
+  object-fit: contain;     /* never crop or stretch */
+}
+
+/* Optional: portrait screenshots (the two .slideimgvertical ones)
+   get a narrower cap so they don't dominate the slide */
+.slideimgvertical {
+  max-height: 60vh;
 }
 
 .mySlides, .mySlides_fuel .FuelSlides, .FuelSlides_fuel { display: none; }
