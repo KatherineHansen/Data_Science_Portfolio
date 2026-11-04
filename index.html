@@ -1,62 +1,83 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katherine Hansen — Data Scientist</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
   <div id="wrapper">
 
-  <div id="sidebar">
-    <h1>Katherine&nbspHansen</h1>
-    Data Scientist
-    <br>
-    <br>KateHansen10@yahoo.com
-    <br>(651) 353-9982
-    <br><a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank">LinkedIn</a>
-    <br><a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank">RESUME</a>
-    <br>
+    <header id="sidebar">
+      <h1>Katherine Hansen</h1>
+      <p class="role">Data Scientist</p>
+      <div class="contact">
+        <a href="mailto:KateHansen10@yahoo.com">KateHansen10@yahoo.com</a>
+        <a href="tel:+16513539982">(651) 353-9982</a>
+        <a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- Add your GitHub once you've confirmed the URL: -->
+        <!-- <a href="https://github.com/katherinehansen" target="_blank" rel="noopener">GitHub</a> -->
+        <a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <nav id="linkbar">
+        <p>
+          <a href="index.html" aria-current="page">Overview</a>
+          <a href="visualizations.html">Dashboards &amp; Viz</a>
+          <a href="statistical_analysis.html">Statistical Analysis</a>
+          <a href="automation.html">Automation</a>
+          <a href="technical.html">Technical</a>
+        </p>
+      </nav>
+
+      <section id="projects">
+        <h2>Selected Projects</h2>
+
+        <article class="project">
+          <h3><a href="visualizations.html">Interactive dashboards for [domain]</a></h3>
+          <p class="project-meta">Python · Plotly Dash · SQL · [domain]</p>
+          <p>
+            Built a set of dashboards on [N] records to surface [specific insight]
+            for [audience/use case]. Replaced a manual weekly report and cut
+            reporting time from [X] to [Y].
+          </p>
+          <div class="links">
+            <a href="visualizations.html">Case study →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3><a href="statistical_analysis.html">Regression analysis of [outcome]</a></h3>
+          <p class="project-meta">Python · statsmodels · scikit-learn · Pandas</p>
+          <p>
+            Modeled [outcome] against [key predictors] on [N] observations.
+            Achieved R² of [value] and identified [predictor] as the dominant
+            driver, [short business/technical implication].
+          </p>
+          <div class="links">
+            <a href="statistical_analysis.html">Case study →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3><a href="automation.html">Automated reporting pipeline</a></h3>
+          <p class="project-meta">Python · Pandas · [scheduler/tool]</p>
+          <p>
+            Automated a recurring [weekly/monthly] report that previously took
+            [X] hours manually, reducing turnaround to [Y] minutes with [N]
+            checks to catch data issues before delivery.
+          </p>
+          <div class="links">
+            <a href="automation.html">Case study →</a>
+          </div>
+        </article>
+      </section>
+
+    </main>
   </div>
-
-  <div id="main">
-    <div id="linkbar">
-    <p>
-      <a href="index.html">Overview</a> |
-      <a href="visualizations.html">Dashboards/Viz</a> |
-      <a href="statistical_analysis.html">Statistical Analysis</a> | 
-      <a href="automation.html">Automation</a> | 
-      <a href="technical.html">Technical</a> 
-    </p>
-  </div>
-
-    <div id='gridtiles'>
-      <div class="divtiles" onclick="window.location='visualizations.html';">
-        <h2>Dashboards & Visualizations</h2>
-        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Viz_Tile.png">
-        <p class="tiledescription">Variety of dashboards and visualizations</p>
-      </div>
-      <div class="divtiles" onclick="window.location='statistical_analysis.html';">
-        <h2>Statistical Analysis</h2>
-        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Stats_Tile.jpg">
-        <p class="tiledescription">Simple and multiple linear regression analyses</p>
-      </div>
-      <div class="divtiles" onclick="window.location='automation.html';">
-        <h2>Automation</h2>
-        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Automation.png">
-        <p class="tiledescription">Report streamlining and efficiencies</p>
-      </div>
-      <div class="divtiles" onclick="window.location='technical.html';">
-        <h2>Technical</h2>
-        <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Technical.png">
-        <p class="tiledescription">Misc. exercises of data handling</p>
-      </div>
-    </div>
-  <br>
-  </div> <!-- div main -->
-  
-  </div> <!-- div wrapper -->
-
 </body>
 </html>
