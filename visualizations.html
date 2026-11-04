@@ -1,237 +1,261 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboards &amp; Visualizations — Katherine Hansen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <div id="wrapper">
+  <div id="wrapper">
 
-    <div id="sidebar">
-        <h1>Katherine&nbspHansen</h1>
-        Data Scientist
-        <br>
-        <br>KateHansen10@yahoo.com
-        <br>(651) 353-9982
-        <br><a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank">LinkedIn</a>
-        <br><a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank">RESUME</a>
-        <br>
-    </div>
-    
-    <div id="main">
-        <div id="linkbar">
+    <header id="sidebar">
+      <div class="header-inner">
+        <div class="identity">
+          <h1>Katherine Hansen</h1>
+          <p class="role">Data Analytics Developer</p>
+        </div>
+        <div class="contact">
+          <a href="mailto:KateHansen10@yahoo.com">KateHansen10@yahoo.com</a>
+          <a href="tel:+16513539982">(651) 353-9982</a>
+          <a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- <a href="https://github.com/katherinehansen" target="_blank" rel="noopener">GitHub</a> -->
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank" rel="noopener">Resume/CV (PDF)</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <nav id="linkbar">
         <p>
-          <a href="index.html">Overview</a> |
-          <a href="visualizations.html">Dashboards/Viz</a> |
-          <a href="statistical_analysis.html">Statistical Analysis</a> | 
-          <a href="automation.html">Automation</a> | 
-          <a href="technical.html">Technical</a> 
+          <a href="index.html">Overview</a>
+          <a href="visualizations.html" aria-current="page">Dashboards &amp; Viz</a>
+          <a href="statistical_analysis.html">Statistical Analysis</a>
+          <a href="automation.html">Automation</a>
+          <a href="technical.html">Technical</a>
         </p>
-    </div>
-  
-  <h2>Dashboards</h2>
-  <p>
-    <strong>Sales</strong> - via Power BI, SQL Server
-    <br><em>      A Power BI dashboard for all levels of the sales team to track thousands of daily transactions, 
-                  monitor trends, analyze movement patterns, and assess customer behavior.
-                  <br><br>
-                  I utilized the company's newly implemented SQL Server to query data from their ERP, integrated external sources, and 
-                  brought in budgeted goals to centralize data and bring uniformity across the company. I interacted with varying levels of 
-                  sales team members to address their specific requirements and preferences. 
-                  </em>
-  </p>
-  
-    <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Summary.PNG">
-      <div class="text">Summary</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_DC.PNG">
-      <div class="text">DC</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityOverview.PNG">
-      <div class="text">Commodity Overview</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityDetail.PNG">
-      <div class="text">Commodity Detail</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerOverview.PNG">
-      <div class="text">Customer Overview</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail.PNG">
-      <div class="text">Customer Detail</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail2.PNG">
-      <div class="text">Customer Detail 2</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_SaleWeights.PNG">
-      <div class="text">Sale Weights</div>
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Movement.PNG">
-      <div class="text">Movement</div>
-    </div>
+      </nav>
 
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-      <span class="dot" onclick="currentSlide(4)"></span> 
-      <span class="dot" onclick="currentSlide(5)"></span> 
-      <span class="dot" onclick="currentSlide(6)"></span> 
-      <span class="dot" onclick="currentSlide(7)"></span> 
-      <span class="dot" onclick="currentSlide(8)"></span> 
-      <span class="dot" onclick="currentSlide(9)"></span> 
-    </div>
-    <script> // For slideshow effects
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-    </script>
-    
+      <h2>Dashboards</h2>
 
-    <p>
-        <strong>Fuel</strong> - via Power BI, MS Access, Python (Selenium)
-        <br><em>      A PowerBI dashboard tracking diesel purchases across distribution centers enabling recommendations 
-                      for fuel contracts using historical data and cost-efficiency analysis.
-                      <br><br>
-                      I managed an MS Access database by consolidating daily invoices from various sources, integrating 
-                      <a href="https://www.eia.gov/" target="_blank">Environmental Impact Assessment (EIA)</a> website data, 
-                      and contracting information. I also also connected to the <a href="https://gasprices.aaa.com/"" target="_blank">AAA</a> 
-                      website through Power BI for state data and web scraped with Python (Selenium) to tie in 
-                      local fuel prices reported by <a href="https://www.gasbuddy.com/" target="_blank">GasBuddy</a>.
-                    </em>
-      </p>
-      
-        <div class="slideshow-container_fuel">
-        
-        <div class="mySlides_fuel fade_fuel">
-          <div class="numbertext_fuel"></div>
-          <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_National.png">
-          <div class="text_fuel">National</div>
-        </div>
-        <div class="mySlides_fuel fade_fuel">
-          <div class="numbertext_fuel"></div>
-          <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DC.png">
-          <div class="text_fuel">DC</div>
-        </div>
-        <div class="mySlides_fuel fade_fuel">
-          <div class="numbertext_fuel"></div>
-          <img class="slideimg"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_Contracts.png">
-          <div class="text_fuel">Contract Fulfillment</div>
-        </div>
-        <div class="mySlides_fuel fade_fuel">
-          <div class="numbertext_fuel"></div>
-          <img class="slideimgvertical"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_LocationContracts.png">
-          <div class="text_fuel">Contract Dailies</div>
-        </div>
-        <div class="mySlides_fuel fade_fuel">
-          <div class="numbertext_fuel"></div>
-          <img class="slideimgvertical"  src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DieselPriceFactors.png">
-          <div class="text_fuel">Diesel Price Factors</div>
-        </div>
-    
-        <a class="prev_fuel" onclick="plusSlides_fuel(-1)">❮</a>
-        <a class="next_fuel" onclick="plusSlides_fuel(1)">❯</a>
+      <article class="project">
+        <h3>Sales performance dashboard</h3>
+        <p class="project-meta">Power BI · SQL Server · ERP integration</p>
+        <p>
+          A Power BI dashboard used across all levels of the sales team to track
+          thousands of daily transactions, monitor trends, analyze movement
+          patterns, and assess customer behavior.
+        </p>
+        <p>
+          I used the company's newly implemented SQL Server to query data from
+          their ERP, integrated external sources, and brought in budgeted goals
+          to centralize data and bring uniformity across the company. I worked
+          directly with sales team members at varying levels to address their
+          specific requirements and preferences.
+        </p>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Summary.PNG" alt="Sales dashboard — summary view">
+            <div class="text">Summary</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_DC.PNG" alt="Sales dashboard — distribution center view">
+            <div class="text">DC</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityOverview.PNG" alt="Sales dashboard — commodity overview">
+            <div class="text">Commodity Overview</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityDetail.PNG" alt="Sales dashboard — commodity detail">
+            <div class="text">Commodity Detail</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerOverview.PNG" alt="Sales dashboard — customer overview">
+            <div class="text">Customer Overview</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail.PNG" alt="Sales dashboard — customer detail">
+            <div class="text">Customer Detail</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail2.PNG" alt="Sales dashboard — customer detail 2">
+            <div class="text">Customer Detail 2</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_SaleWeights.PNG" alt="Sales dashboard — sale weights">
+            <div class="text">Sale Weights</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Movement.PNG" alt="Sales dashboard — movement">
+            <div class="text">Movement</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
         <br>
         <div style="text-align:center">
-          <span class="dot_fuel" onclick="currentSlide_fuel(1)"></span> 
-          <span class="dot_fuel" onclick="currentSlide_fuel(2)"></span> 
-          <span class="dot_fuel" onclick="currentSlide_fuel(3)"></span> 
-          <span class="dot_fuel" onclick="currentSlide_fuel(4)"></span> 
-          <span class="dot_fuel" onclick="currentSlide_fuel(5)"></span> 
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
         </div>
-        <script> // For slideshow effects
-            let slideIndex_fuel = 1;
-            showSlides_fuel(slideIndex_fuel);
-            function plusSlides_fuel(n) {
-              showSlides_fuel(slideIndex_fuel += n);
-            }
-            function currentSlide_fuel(n) {
-              showSlides_fuel(slideIndex_fuel = n);
-            }
-            function showSlides_fuel(n) {
-              let i_fuel;
-              let slides = document.getElementsByClassName("mySlides_fuel");
-              let dots = document.getElementsByClassName("dot_fuel");
-              if (n > slides.length) {slideIndex_fuel = 1}    
-              if (n < 1) {slideIndex_fuel = slides.length}
-              for (i_fuel = 0; i_fuel < slides.length; i_fuel++) {
-                slides[i_fuel].style.display = "none";  
-              }
-              for (i_fuel = 0; i_fuel < dots.length; i_fuel++) {
-                dots[i_fuel].className = dots[i_fuel].className.replace(" active", "");
-              }
-              slides[slideIndex_fuel-1].style.display = "block";  
-              dots[slideIndex_fuel-1].className += " active";
-            }
-        </script>
+      </article>
 
+      <article class="project">
+        <h3>Fuel purchase &amp; contract dashboard</h3>
+        <p class="project-meta">Power BI · MS Access · Python (Selenium) · Web scraping</p>
+        <p>
+          A Power BI dashboard tracking diesel purchases across distribution
+          centers, enabling recommendations for fuel contracts using historical
+          data and cost-efficiency analysis.
+        </p>
+        <p>
+          I managed an MS Access database by consolidating daily invoices from
+          various sources, integrating
+          <a href="https://www.eia.gov/" target="_blank" rel="noopener">EIA</a>
+          website data, and contracting information. I also connected to the
+          <a href="https://gasprices.aaa.com/" target="_blank" rel="noopener">AAA</a>
+          website through Power BI for state data, and web-scraped with Python
+          (Selenium) to tie in local fuel prices reported by
+          <a href="https://www.gasbuddy.com/" target="_blank" rel="noopener">GasBuddy</a>.
+        </p>
 
-  <h2 id="Vizualizations">Vizualizations</h2>
-  <p>
+        <div class="slideshow-container_fuel">
+          <div class="mySlides_fuel fade_fuel">
+            <div class="numbertext_fuel"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_National.png" alt="Fuel dashboard — national view">
+            <div class="text_fuel">National</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <div class="numbertext_fuel"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DC.png" alt="Fuel dashboard — distribution center view">
+            <div class="text_fuel">DC</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <div class="numbertext_fuel"></div>
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_Contracts.png" alt="Fuel dashboard — contract fulfillment">
+            <div class="text_fuel">Contract Fulfillment</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <div class="numbertext_fuel"></div>
+            <img class="slideimgvertical" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_LocationContracts.png" alt="Fuel dashboard — contract dailies">
+            <div class="text_fuel">Contract Dailies</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <div class="numbertext_fuel"></div>
+            <img class="slideimgvertical" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DieselPriceFactors.png" alt="Fuel dashboard — diesel price factors">
+            <div class="text_fuel">Diesel Price Factors</div>
+          </div>
 
-    <strong>Minnesota Early/Absentee Voting</strong> <br><br> <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/Real_16067745859750/Story1" target="_blank">Hosted on Tableau Public</a> - via Tableau, Excel
-    <br><em>      A look into the increased popularity of early and absentee voting for presidential elections in Minnesota, 
-                  especially as it pertained to the 2020 election. Marked by the COVID-19 pandemic, in-person voting was 
-                  advised against and the option of voting absentee was greatly encouraged. These visualizations include
-                  a look over the past 2 decades of elections, a breakdown by county for the 2016 and 2020 elections, and
-                  an infographic showing some demographics of early voting.</em>
-  </p>
-  <p>
-    <strong>World Bank Indicators and Covid</strong> <br><br> <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/WorldBankIndicatorsandCovid/WorldBankIndicatorsandCOVID" target="_blank">Hosted on Tableau Public</a> - via Tableau, Python, Excel
-    <br><em>      I set out to discover potential relationships between World Bank Development Indicators and COVID-19 cases by country. I pulled data from multiple sources,
-                  with most data management carried out using Python. In Tableau, I created graphs for each indicator (such as life expectancy, tobacco use, etc.) with the 
-                  countries COVID-19 case rates, as well as an interactive version with which the dates of interest can be manipulated and more.</em>
-  </p>
-  <br>
-  </div> <!-- div main -->
-  
-  </div> <!-- div wrapper -->
+          <a class="prev_fuel" onclick="plusSlides_fuel(-1)">❮</a>
+          <a class="next_fuel" onclick="plusSlides_fuel(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot_fuel" onclick="currentSlide_fuel(1)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(2)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(3)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(4)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(5)"></span>
+        </div>
+      </article>
 
+      <h2>Visualizations</h2>
+
+      <article class="project">
+        <h3>Minnesota early &amp; absentee voting</h3>
+        <p class="project-meta">
+          Tableau · Excel ·
+          <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/Real_16067745859750/Story1" target="_blank" rel="noopener">View on Tableau Public →</a>
+        </p>
+        <p>
+          An exploration of the rising popularity of early and absentee voting
+          in Minnesota presidential elections, with particular focus on 2020.
+          The COVID-19 pandemic discouraged in-person voting and greatly
+          encouraged absentee ballots. The visualizations cover two decades of
+          elections, a county-level breakdown for 2016 and 2020, and an
+          infographic of early-voting demographics.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>World Bank indicators &amp; COVID-19</h3>
+        <p class="project-meta">
+          Tableau · Python · Excel ·
+          <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/WorldBankIndicatorsandCovid/WorldBankIndicatorsandCOVID" target="_blank" rel="noopener">View on Tableau Public →</a>
+        </p>
+        <p>
+          An investigation into potential relationships between World Bank
+          Development Indicators and COVID-19 case rates by country. I pulled
+          data from multiple sources with most data management carried out in
+          Python, then built Tableau graphs pairing each indicator (life
+          expectancy, tobacco use, etc.) with country case rates — plus an
+          interactive version where users can manipulate dates of interest
+          and more.
+        </p>
+      </article>
+
+    </main>
+  </div>
+
+  <script>
+    /* Sales dashboard slideshow */
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    /* Fuel dashboard slideshow */
+    let slideIndex_fuel = 1;
+    showSlides_fuel(slideIndex_fuel);
+    function plusSlides_fuel(n) { showSlides_fuel(slideIndex_fuel += n); }
+    function currentSlide_fuel(n) { showSlides_fuel(slideIndex_fuel = n); }
+    function showSlides_fuel(n) {
+      let slides = document.getElementsByClassName("mySlides_fuel");
+      let dots = document.getElementsByClassName("dot_fuel");
+      if (n > slides.length) { slideIndex_fuel = 1; }
+      if (n < 1) { slideIndex_fuel = slides.length; }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex_fuel - 1].style.display = "block";
+      dots[slideIndex_fuel - 1].className += " active";
+    }
+  </script>
 </body>
 </html>
