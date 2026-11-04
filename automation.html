@@ -1,66 +1,90 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automation — Katherine Hansen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <div id="wrapper">
+  <div id="wrapper">
 
-    <div id="sidebar">
-        <h1>Katherine&nbspHansen</h1>
-        Data Scientist
-        <br>
-        <br>KateHansen10@yahoo.com
-        <br>(651) 353-9982
-        <br><a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank">LinkedIn</a>
-        <br><a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank">RESUME</a>
-        <br>
-    </div>
+    <header id="sidebar">
+      <div class="header-inner">
+        <div class="identity">
+          <h1>Katherine Hansen</h1>
+          <p class="role">Data Scientist</p>
+        </div>
+        <div class="contact">
+          <a href="mailto:KateHansen10@yahoo.com">KateHansen10@yahoo.com</a>
+          <a href="tel:+16513539982">(651) 353-9982</a>
+          <a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- <a href="https://github.com/katherinehansen" target="_blank" rel="noopener">GitHub</a> -->
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank" rel="noopener">Resume/CV (PDF)</a>
+        </div>
+      </div>
+    </header>
 
-  <div id="main">
-    <div id="linkbar">
-    <p>
-      <a href="index.html">Overview</a> |
-      <a href="visualizations.html">Dashboards/Viz</a> |
-      <a href="statistical_analysis.html">Statistical Analysis</a> | 
-      <a href="automation.html">Automation</a> | 
-      <a href="technical.html">Technical</a> 
+    <main id="main">
+      <nav id="linkbar">
+        <p>
+          <a href="index.html">Overview</a>
+          <a href="visualizations.html">Dashboards &amp; Viz</a>
+          <a href="statistical_analysis.html">Statistical Analysis</a>
+          <a href="automation.html" aria-current="page">Automation</a>
+          <a href="technical.html">Technical</a>
+        </p>
+      </nav>
 
-    </p>
-    </div>
+      <h2>Automation</h2>
 
-  <h2 id="Automation">Automation</h2>
-  <p>
-    <strong>Margin Report</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/Item Margin Template.xlsm" target="_blank">Excel .xlsm file</a> - via MS VBA, Excel
-    <br><em>&emsp;A Microsoft Excel report with Pivot Tables assembled via a macro. The user copies and pastes raw data from a generated 
-                  file into the workbook then runs a macro that inserts multiple pivot tables to more easily consume information.
-    </em>
-  </p>
-  <p>
-    <strong>Web Scraping GasBuddy</strong> - via Python (Selenium, Pandas) <br>
-    <em>&emsp;A Python script to web scrape using Selenium. Collects local gas prices from the 
-                  <a href="https://www.gasbuddy.com/ target="_blank">GasBuddy</a> website 
-                  to be used in a diesel tracking dashboard. 
-    </em>
-    <br><br>Python code
-    <iframe src="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/Scrape%20GasBuddy%20Diesel%20Prices.ipynb" title="Jupyter nbviewer"></iframe>
-  </p>
-  <p><strong>Word Report Automation</strong> <br><br> <a href="https://katherinehansen.github.io/Data_Science_Portfolio/FCDStudentsAttitudesandBehaviorsSurveyReportAutomation.pdf" target="_blank">FCD Students Attitudes and Behaviors Survey Report Automation</a>  - via Microsoft VBA, Excel, Word
-    <br><em>&emsp;Abstract: Freedom from Chemical Dependency Prevention Works (FCD) administers the Students
-                  Attitudes and Behavior Survey (SABS) to measure student attitudes and behaviors regarding
-                  alcohol and other drugs as well as their perceptions of schoolmates’ attitudes and behaviors. The
-                  survey results are then communicated within a 100-page report. The goal of this project was to
-                  automate the report. Using Microsoft Visual Basic for Applications (VBA), ways to automate intext inputs, tables, and charts from Excel to Word were determined. While the whole report was
-                  not completed, the completed portion runs much faster than the previous method of manual
-                  input.</em>
-  </p>
- 
-  </div> <!-- div main -->
-  
-  </div> <!-- div wrapper -->
+      <article class="project">
+        <h3>
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/Item%20Margin%20Template.xlsm" target="_blank" rel="noopener">Margin report generator</a>
+        </h3>
+        <p class="project-meta">Excel · VBA · Pivot Tables</p>
+        <p>
+          An Excel report built around pivot tables assembled by a macro. The
+          user pastes raw data from a generated file into the workbook, then
+          runs a macro that inserts multiple pivot tables so the information is
+          faster to consume.
+        </p>
+      </article>
 
+      <article class="project">
+        <h3>GasBuddy web scraper</h3>
+        <p class="project-meta">Python · Selenium · Pandas</p>
+        <p>
+          A Python script using Selenium to collect local gas prices from the
+          <a href="https://www.gasbuddy.com/" target="_blank" rel="noopener">GasBuddy</a>
+          website, feeding a diesel-tracking dashboard.
+        </p>
+        <iframe
+          src="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/Scrape%20GasBuddy%20Diesel%20Prices.ipynb"
+          title="GasBuddy scraper — Jupyter notebook on nbviewer"></iframe>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/FCDStudentsAttitudesandBehaviorsSurveyReportAutomation.pdf" target="_blank" rel="noopener">Survey report automation (FCD)</a>
+        </h3>
+        <p class="project-meta">Excel · Word · VBA</p>
+        <p>
+          Freedom from Chemical Dependency Prevention Works (FCD) administers
+          the Students Attitudes and Behavior Survey (SABS) to measure student
+          attitudes and behaviors regarding alcohol and other drugs, as well as
+          their perceptions of schoolmates' attitudes and behaviors. Results are
+          communicated in a 100-page report. The goal of this project was to
+          automate that report — using Microsoft Visual Basic for Applications
+          (VBA), I determined ways to automate in-text inputs, tables, and
+          charts from Excel to Word. While the full report was not completed,
+          the finished portion runs much faster than the previous manual
+          process.
+        </p>
+      </article>
+
+    </main>
+  </div>
 </body>
 </html>
