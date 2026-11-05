@@ -41,6 +41,29 @@
 
       <article class="project">
         <h3>
+          <a href="Simulating+the+Game+of+Yahtzee+using+Python.pdf" target="_blank" rel="noopener">Simulating the game of Yahtzee using Python</a>
+        </h3>
+        <p class="project-meta">Python · Monte Carlo simulation · Matplotlib</p>
+        <p>
+          A full simulation of the dice game Yahtzee in Python, including
+          dice rolling, scorekeeping, and strategy logic for the 13-round
+          scorecard. Two reroll strategies handle the two main paths to points
+          — rolling for multiples of a face value (and full house) versus
+          rolling for small and large straights — with a strategy-choosing
+          function that prioritizes Yahtzees, then three-of-a-kind or two
+          pairs, then straights. Scoring covers the upper and lower sections
+          plus joker and Yahtzee bonus rules, with the highest-scoring
+          available category chosen each round. I evaluated the program with a
+          Monte Carlo simulation of <strong>10,000 games</strong>, yielding a
+          mean score of <strong>197.14</strong> (95% CI [196.22, 198.06]),
+          an upper-section bonus in 3.53% of games, and a Yahtzee in 24.38%.
+          The conservative strategy rarely earned the upper-section bonus,
+          pointing to a riskier approach as a way to improve scores.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>
           <a href="Super+Mario+64+Speedruns+EC+Assignment.html">Super Mario 64 speedruns</a>
         </h3>
         <p class="project-meta">Python · Speedrun.com API · Pandas · Matplotlib</p>
