@@ -380,3 +380,33 @@ td {
 @media only screen and (max-width: 300px) {
   .prev, .prev_fuel, .next, .next_fuel, .text, .text_fuel { font-size: 11px; }
 }
+
+
+
+
+/* ---------- Case-study portfolio additions ---------- */
+
+.intro {
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin: 0 0 2rem 0;
+  max-width: 60ch;
+}
+
+.project h3 {
+  font-size: 1.25rem;
+}
+
+.project p strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.more-link {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+}
+
+.more-link a {
+  font-weight: 600;
+}
