@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Other Work — Katherine Hansen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header id="sidebar">
+      <div class="header-inner">
+        <div class="identity">
+          <h1>Katherine Hansen</h1>
+          <p class="role">Data Analytics Developer</p>
+        </div>
+        <div class="contact">
+          <a href="mailto:KateHansen10@yahoo.com">KateHansen10@yahoo.com</a>
+          <a href="tel:+16513539982">(651) 353-9982</a>
+          <a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank" rel="noopener">Resume/CV (PDF)</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <nav id="linkbar">
+        <p>
+          <a href="index.html">Work</a>
+          <a href="other_work.html" aria-current="page">Other Work</a>
+          <a href="about.html">About</a>
+        </p>
+      </nav>
+
+      <p class="intro">
+        Smaller projects, exercises, and one-off analyses — the breadth behind
+        the featured work.
+      </p>
+
+      <h2>Analysis &amp; modeling</h2>
+
+      <article class="project">
+        <h3>
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/CancerPoverty.pdf" target="_blank" rel="noopener">Cancer mortality &amp; poverty rates</a>
+        </h3>
+        <p class="project-meta">JMP · R · Simple linear regression</p>
+        <p>
+          Explored the relationship between poverty rates across the US and
+          cancer mortality rates, assessing the validity of the simple linear
+          regression and examining outliers. Poverty accounted for roughly
+          <strong>18% of the variability</strong> in cancer mortality.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/BirthWeight.pdf" target="_blank" rel="noopener">North Carolina birth weights</a>
+        </h3>
+        <p class="project-meta">JMP · R · Multiple linear regression</p>
+        <p>
+          Multiple regression predicting birth weights from mother's minority
+          status, smoking status, and number of previous births — together
+          explaining about <strong>46% of the variation</strong> in birth
+          weights.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="Super+Mario+64+Speedruns+EC+Assignment.html">Super Mario 64 speedruns</a>
+        </h3>
+        <p class="project-meta">Python · Speedrun.com API · Pandas · Matplotlib</p>
+        <p>
+          Pulled verified runs live from the Speedrun.com API, summarized
+          submissions by year across the 16/70/120 Star categories, and
+          analyzed the top 100 16 Star world records — plotting completion
+          times, deriving per-rank time gaps, and visualizing how tightly
+          clustered the leaderboard has become.
+        </p>
+      </article>
+
+      <h2>Data handling &amp; scripting</h2>
+
+      <article class="project">
+        <h3>World Bank indicators &amp; COVID-19 (data cleaning)</h3>
+        <p class="project-meta">Python · Pandas · Excel · CSV output for Tableau</p>
+        <p>
+          Combined COVID-19 cases, country populations, and World Bank
+          indicators into a single dataset, derived per-country COVID-19
+          rates, filtered multi-year indicators down to the year of interest,
+          and exported a CSV ready for visualization in Tableau.
+        </p>
+        <iframe
+          src="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/covid_indicators_work.ipynb"
+          title="World Bank indicators and COVID — Jupyter notebook on nbviewer"></iframe>
+      </article>
+
+      <article class="project">
+        <h3>Sell Short trades file cleanup</h3>
+        <p class="project-meta">Python · Regular expressions · Text parsing</p>
+        <p>
+          Cleaned a messy text report into a structured CSV: removed unwanted
+          lines via regex, grouped 2–4-line records into single rows, split
+          fields into columns, corrected data errors, and reordered columns to
+          match the header.
+        </p>
+        <p class="links">
+          <a href="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/part3_Sell_Short_Trades.ipynb" target="_blank" rel="noopener">View cleaning notebook →</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>GasBuddy web scraper</h3>
+        <p class="project-meta">Python · Selenium · Pandas</p>
+        <p>
+          A Python/Selenium script that collects local gas prices from
+          <a href="https://www.gasbuddy.com/" target="_blank" rel="noopener">GasBuddy</a>
+          to feed the diesel-tracking dashboard featured above.
+        </p>
+        <iframe
+          src="https://nbviewer.org/urls/katherinehansen.github.io/Data_Science_Portfolio/Scrape%20GasBuddy%20Diesel%20Prices.ipynb"
+          title="GasBuddy scraper — Jupyter notebook on nbviewer"></iframe>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/Item%20Margin%20Template.xlsm" target="_blank" rel="noopener">Margin report generator</a>
+        </h3>
+        <p class="project-meta">Excel · VBA · Pivot Tables</p>
+        <p>
+          An Excel workbook with a macro that inserts multiple pivot tables
+          from pasted raw data, so the information is faster to consume.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="Simulating+the+Game+of+Yahtzee+using+Python.pdf" target="_blank" rel="noopener">Simulating the game of Yahtzee</a>
+        </h3>
+        <p class="project-meta">Python · Monte Carlo simulation · Matplotlib</p>
+        <p>
+          A full Yahtzee simulation with dice rolling, scorekeeping, strategy
+          logic, and joker/bonus rules, evaluated over
+          <strong>10,000 Monte Carlo games</strong> (mean score 197.14, 95% CI
+          [196.22, 198.06]).
+        </p>
+      </article>
+
+      <h2>Visualizations</h2>
+
+      <article class="project">
+        <h3>Minnesota early &amp; absentee voting</h3>
+        <p class="project-meta">
+          Tableau · Excel ·
+          <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/Real_16067745859750/Story1" target="_blank" rel="noopener">View on Tableau Public →</a>
+        </p>
+        <p>
+          Explored the rising popularity of early and absentee voting in
+          Minnesota presidential elections, with a focus on 2020 — covering
+          two decades of elections, a county-level breakdown for 2016 and 2020,
+          and an infographic of early-voting demographics.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>World Bank indicators &amp; COVID-19</h3>
+        <p class="project-meta">
+          Tableau · Python · Excel ·
+          <a href="https://public.tableau.com/app/profile/katherine.hansen/viz/WorldBankIndicatorsandCovid/WorldBankIndicatorsandCOVID" target="_blank" rel="noopener">View on Tableau Public →</a>
+        </p>
+        <p>
+          Investigated relationships between World Bank Development Indicators
+          and COVID-19 case rates by country, building Tableau graphs pairing
+          each indicator (life expectancy, tobacco use, etc.) with country case
+          rates, plus an interactive version where users can manipulate dates
+          of interest.
+        </p>
+      </article>
+
+      <h2>Databases</h2>
+
+      <article class="project">
+        <h3>
+          <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Java%20SQL" target="_blank" rel="noopener">SQL practice via Java JDBC</a>
+        </h3>
+        <p class="project-meta">Java · MySQL · JDBC</p>
+        <p>
+          SQL exercises driven through Java JDBC — basic syntax, stored
+          procedures, prepared statements, transactions, and multi-table
+          joins.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>
+          <a href="https://github.com/KatherineHansen/Data_Science_Portfolio/tree/gh-pages/Gym%20Project" target="_blank" rel="noopener">Gym database — front desk app</a>
+        </h3>
+        <p class="project-meta">PHP · HTML · MySQL</p>
+        <p>
+          A small web-to-database app: a login page verifies credentials, then
+          a mock front-desk portal lets users add customers, schedule
+          personal-training appointments, and delete appointments — all
+          updating the underlying SQL tables.
+        </p>
+      </article>
+
+      <p class="more-link">
+        <a href="index.html">← Back to featured work</a>
+      </p>
+
+    </main>
+  </div>
+</body>
+</html>
