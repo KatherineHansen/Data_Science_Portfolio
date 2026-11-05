@@ -11,54 +11,276 @@
   <div id="wrapper">
 
     <header id="sidebar">
-      <div class="identity">
-        <h1>Katherine Hansen</h1>
-        <p class="role">Data Analytics Developer</p>
-      </div>
-      <div class="contact">
-        <a href="mailto:KateHansen10@yahoo.com">KateHansen10@yahoo.com</a>
-        <a href="tel:+16513539982">(651) 353-9982</a>
-        <a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank" rel="noopener">LinkedIn</a>
-        <!-- <a href="https://github.com/katherinehansen" target="_blank" rel="noopener">GitHub</a> -->
-        <a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank" rel="noopener">Resume/CV (PDF)</a>
+      <div class="header-inner">
+        <div class="identity">
+          <h1>Katherine Hansen</h1>
+          <p class="role">Data Analytics Developer</p>
+        </div>
+        <div class="contact">
+          <a href="mailto:KateHansen10@yahoo.com">KateHansen10@yahoo.com</a>
+          <a href="tel:+16513539982">(651) 353-9982</a>
+          <a href="https://www.linkedin.com/in/katherine-hansen-98716b163/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/KatherineHansen_Resume.pdf" target="_blank" rel="noopener">Resume/CV (PDF)</a>
+        </div>
       </div>
     </header>
 
     <main id="main">
       <nav id="linkbar">
         <p>
-          <a href="index.html" aria-current="page">Overview</a>
-          <a href="visualizations.html">Dashboards &amp; Viz</a>
-          <a href="statistical_analysis.html">Statistical Analysis</a>
-          <a href="automation.html">Automation</a>
-          <a href="technical.html">Technical</a>
+          <a href="index.html" aria-current="page">Work</a>
+          <a href="other_work.html">Other Work</a>
+          <a href="about.html">About</a>
         </p>
       </nav>
 
-      <div id="gridtiles">
-        <div class="divtiles" onclick="window.location='visualizations.html';">
-          <h2>Dashboards &amp; Visualizations</h2>
-          <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Viz_Tile.png" alt="">
-          <p class="tiledescription">Variety of dashboards and visualizations</p>
+      <p class="intro">
+        I turn messy operational data into dashboards, reports, and analyses
+        that people actually use. Below are a few projects in more depth.
+      </p>
+
+      <!-- ============ FEATURED: SALES DASHBOARD ============ -->
+      <article class="project">
+        <h3>Sales performance dashboard</h3>
+        <p class="project-meta">Power BI · SQL Server · ERP integration</p>
+
+        <p><strong>Problem.</strong> The sales team tracked thousands of daily
+        transactions across multiple systems, with no single view of trends,
+        movement patterns, or customer behavior. Budgeted goals lived in
+        separate spreadsheets, so there was no uniform way to compare actuals
+        against targets across the company.</p>
+
+        <p><strong>Approach.</strong> I built a Power BI dashboard used across
+        all levels of the sales team. Using the company's newly implemented
+        SQL Server, I queried data from their ERP, integrated external sources,
+        and brought in budgeted goals to centralize data and create uniformity.
+        I worked directly with sales team members at varying levels to address
+        their specific requirements and preferences.</p>
+
+        <p><strong>Result.</strong> The dashboard became the team's go-to view
+        for daily transactions, trends, movement patterns, and customer
+        behavior. [OPTIONAL: add a concrete outcome here — e.g. "replaced X
+        hours/week of manual reporting" or "used by N people across N
+        distribution centers."]</p>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Summary.PNG" alt="Sales dashboard — summary view">
+            <div class="text">Summary</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_DC.PNG" alt="Sales dashboard — distribution center view">
+            <div class="text">DC</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityOverview.PNG" alt="Sales dashboard — commodity overview">
+            <div class="text">Commodity Overview</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CommodityDetail.PNG" alt="Sales dashboard — commodity detail">
+            <div class="text">Commodity Detail</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerOverview.PNG" alt="Sales dashboard — customer overview">
+            <div class="text">Customer Overview</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail.PNG" alt="Sales dashboard — customer detail">
+            <div class="text">Customer Detail</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_CustomerDetail2.PNG" alt="Sales dashboard — customer detail 2">
+            <div class="text">Customer Detail 2</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_SaleWeights.PNG" alt="Sales dashboard — sale weights">
+            <div class="text">Sale Weights</div>
+          </div>
+          <div class="mySlides fade">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Sales_Movement.PNG" alt="Sales dashboard — movement">
+            <div class="text">Movement</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        <div class="divtiles" onclick="window.location='statistical_analysis.html';">
-          <h2>Statistical Analysis</h2>
-          <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Stats_Tile.jpg" alt="">
-          <p class="tiledescription">Simple and multiple linear regression analyses</p>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
         </div>
-        <div class="divtiles" onclick="window.location='automation.html';">
-          <h2>Automation</h2>
-          <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Automation.png" alt="">
-          <p class="tiledescription">Report streamlining and efficiencies</p>
+      </article>
+
+      <!-- ============ FEATURED: FUEL DASHBOARD ============ -->
+      <article class="project">
+        <h3>Fuel purchase &amp; contract dashboard</h3>
+        <p class="project-meta">Power BI · MS Access · Python (Selenium) · Web scraping</p>
+
+        <p><strong>Problem.</strong> Diesel purchases were tracked across
+        distribution centers with no consolidated view, and there was no
+        clear way to recommend fuel contracts based on historical cost and
+        efficiency.</p>
+
+        <p><strong>Approach.</strong> I built a Power BI dashboard tracking
+        diesel purchases across distribution centers to support contract
+        recommendations. I managed an MS Access database consolidating daily
+        invoices from multiple sources, integrated
+        <a href="https://www.eia.gov/" target="_blank" rel="noopener">EIA</a>
+        website data and contracting information, connected to the
+        <a href="https://gasprices.aaa.com/" target="_blank" rel="noopener">AAA</a>
+        website through Power BI for state data, and web-scraped local fuel
+        prices from
+        <a href="https://www.gasbuddy.com/" target="_blank" rel="noopener">GasBuddy</a>
+        using Python (Selenium).</p>
+
+        <p><strong>Result.</strong> The dashboard gave the team a consolidated
+        view of diesel spend, contract fulfillment, and the factors driving
+        price. [OPTIONAL: add a concrete outcome — e.g. "supported X contract
+        decisions" or "surfaced Y in savings."]</p>
+
+        <div class="slideshow-container_fuel">
+          <div class="mySlides_fuel fade_fuel">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_National.png" alt="Fuel dashboard — national view">
+            <div class="text_fuel">National</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DC.png" alt="Fuel dashboard — distribution center view">
+            <div class="text_fuel">DC</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <img class="slideimg" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_Contracts.png" alt="Fuel dashboard — contract fulfillment">
+            <div class="text_fuel">Contract Fulfillment</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <img class="slideimgvertical" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_LocationContracts.png" alt="Fuel dashboard — contract dailies">
+            <div class="text_fuel">Contract Dailies</div>
+          </div>
+          <div class="mySlides_fuel fade_fuel">
+            <img class="slideimgvertical" src="https://katherinehansen.github.io/Data_Science_Portfolio/RDW_Dash_Fuel_DieselPriceFactors.png" alt="Fuel dashboard — diesel price factors">
+            <div class="text_fuel">Diesel Price Factors</div>
+          </div>
+          <a class="prev_fuel" onclick="plusSlides_fuel(-1)">❮</a>
+          <a class="next_fuel" onclick="plusSlides_fuel(1)">❯</a>
         </div>
-        <div class="divtiles" onclick="window.location='technical.html';">
-          <h2>Technical</h2>
-          <img class="imgtiles" src="https://katherinehansen.github.io/Data_Science_Portfolio/Technical.png" alt="">
-          <p class="tiledescription">Misc. exercises of data handling</p>
+        <br>
+        <div style="text-align:center">
+          <span class="dot_fuel" onclick="currentSlide_fuel(1)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(2)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(3)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(4)"></span>
+          <span class="dot_fuel" onclick="currentSlide_fuel(5)"></span>
         </div>
-      </div>
+      </article>
+
+      <!-- ============ FEATURED: GENRE CLUSTERING ============ -->
+      <article class="project">
+        <h3>Discovering genres by clustering music based on audio features</h3>
+        <p class="project-meta">Python · scikit-learn · PCA · K-Means &amp; Gaussian Mixture Models</p>
+
+        <p><strong>Problem.</strong> Music genres are largely a social
+        construct — assigned by culture and marketing rather than measurable
+        properties. But if genre is socially defined, do Spotify's algorithmic
+        audio features still produce natural clusters that align with the
+        genre labels people have assigned?</p>
+
+        <p><strong>Approach.</strong> Using the 600k+ track Spotify dataset, I
+        dropped redundant features (energy, for its strong correlation with
+        acousticness and loudness) and standardized the remaining twelve. I
+        applied PCA, K-Means, and Gaussian Mixture Models, using a PCA scree
+        plot, a WCSS elbow plot, and BIC to inform component choices. I then
+        compared cluster assignments to genre labels using ARI, NMI,
+        Homogeneity, Completeness, and V-measure, and analyzed audio features
+        by decade to add historical context.</p>
+
+        <p><strong>Result.</strong> Cluster assignments did not closely align
+        with genre labels: ARI ≈ 0.015 and NMI ≈ 0.11 for K-Means, with GMM
+        performing slightly worse. In other words,
+        <strong>audio features alone do not recover musical genre</strong> —
+        supporting the view that genre is largely a social construct. The
+        clusters did capture distinct sonic profiles, and the temporal analysis
+        documented long-term shifts such as declining acousticness and the
+        1990s "loudness wars."</p>
+
+        <p class="links">
+          <a href="Final_Project_Group_004.pdf" target="_blank" rel="noopener">Read the full paper (PDF) →</a>
+        </p>
+      </article>
+
+      <!-- ============ FEATURED: SURVEY AUTOMATION ============ -->
+      <article class="project">
+        <h3>Survey report automation (FCD)</h3>
+        <p class="project-meta">Excel · Word · VBA</p>
+
+        <p><strong>Problem.</strong> Freedom from Chemical Dependency
+        Prevention Works (FCD) administers the Students Attitudes and Behavior
+        Survey (SABS) to measure student attitudes and behaviors regarding
+        alcohol and other drugs. Results are communicated in a 100-page report
+        — assembled manually, which was slow and prone to error.</p>
+
+        <p><strong>Approach.</strong> Using Microsoft Visual Basic for
+        Applications (VBA), I determined ways to automate in-text inputs,
+        tables, and charts from Excel to Word, driving the report generation
+        programmatically.</p>
+
+        <p><strong>Result.</strong> The finished portion of the report runs
+        much faster than the previous manual process. [OPTIONAL: add a concrete
+        time figure if you have one, e.g. "cut report assembly from X hours to
+        Y."]</p>
+
+        <p class="links">
+          <a href="https://katherinehansen.github.io/Data_Science_Portfolio/FCDStudentsAttitudesandBehaviorsSurveyReportAutomation.pdf" target="_blank" rel="noopener">Read the write-up (PDF) →</a>
+        </p>
+      </article>
+
+      <p class="more-link">
+        <a href="other_work.html">See other work →</a>
+      </p>
 
     </main>
   </div>
+
+  <script>
+    /* Sales dashboard slideshow */
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    /* Fuel dashboard slideshow */
+    let slideIndex_fuel = 1;
+    showSlides_fuel(slideIndex_fuel);
+    function plusSlides_fuel(n) { showSlides_fuel(slideIndex_fuel += n); }
+    function currentSlide_fuel(n) { showSlides_fuel(slideIndex_fuel = n); }
+    function showSlides_fuel(n) {
+      let slides = document.getElementsByClassName("mySlides_fuel");
+      let dots = document.getElementsByClassName("dot_fuel");
+      if (n > slides.length) { slideIndex_fuel = 1; }
+      if (n < 1) { slideIndex_fuel = slides.length; }
+      for (let i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex_fuel - 1].style.display = "block";
+      dots[slideIndex_fuel - 1].className += " active";
+    }
+  </script>
 </body>
 </html>
