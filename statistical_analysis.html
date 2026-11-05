@@ -41,6 +41,30 @@
 
       <article class="project">
         <h3>
+          <a href="Final_Project_Group_004.pdf" target="_blank" rel="noopener">Discovering genres by clustering music based on audio features</a>
+        </h3>
+        <p class="project-meta">Python · scikit-learn · PCA · K-Means &amp; Gaussian Mixture Models</p>
+        <p>
+          An unsupervised machine learning study on whether the 600k+ track
+          Spotify dataset naturally clusters into the human-assigned genres
+          using only Spotify's algorithmic audio features. After dropping
+          redundant features (energy, for its strong correlation with
+          acousticness and loudness) and standardizing the remaining twelve,
+          I applied PCA, K-Means, and Gaussian Mixture Models — using a PCA
+          scree plot, a WCSS elbow plot, and BIC to inform component choices.
+          Comparing cluster assignments to genre labels yielded ARI ≈ 0.015 and
+          NMI ≈ 0.11 (K-Means), with GMM performing slightly worse, indicating
+          that <strong>audio features alone do not recover musical genre</strong>.
+          The clusters did, however, capture distinct sonic profiles, and a
+          decade-by-decade analysis of the features documented long-term shifts
+          such as declining acousticness and the 1990s "loudness wars" — evidence
+          that genre is largely a social construct rather than a measurable
+          property of the audio itself.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>
           <a href="https://katherinehansen.github.io/Data_Science_Portfolio/CancerPoverty.pdf" target="_blank" rel="noopener">Cancer mortality &amp; poverty rates</a>
         </h3>
         <p class="project-meta">JMP · R · Simple linear regression</p>
