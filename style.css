@@ -410,3 +410,25 @@ td {
 .more-link a {
   font-weight: 600;
 }
+
+
+
+/* ---------- About page avatar ---------- */
+
+.avatar {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 0 1.5rem 0;
+  border: 1px solid var(--rule);
+}
+
+@media (max-width: 640px) {
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
