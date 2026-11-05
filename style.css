@@ -432,3 +432,11 @@ td {
     height: 120px;
   }
 }
+
+
+
+/* ---------- Centered nav ---------- */
+
+#linkbar p {
+  justify-content: center;
+}
